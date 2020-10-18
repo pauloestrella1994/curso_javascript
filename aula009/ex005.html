@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body {
+                background-color: #b361b3;
+
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a usar o <strong>DOM</strong> em Javascript</h1>
+    <p>Aqui vai o <strong>resultado</strong></p>
+    <p>Aqui vai o <strong>2° resultado</strong></p>
+    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div> <!-- pegando por id no JS-->
+    <div name="msg" >Clique em mim</div> <!-- pegando por name no JS-->
+    <div class="msg" >Clique em mim</div> <!-- pegando por class no JS-->
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('o primeiro parágrafo está escrito assim: ' + p1.innerText)
+        p1.style.color = 'white'
+        var identificador = window.document.getElementById('msg')
+        identificador.style.background = 'green'
+        var nome = window.document.getElementsByName('msg')[0]
+        nome.style.background = 'red'
+        var seletor = window.document.querySelector('div.msg')
+        seletor.style.background = "violet66"
+
+    </script>
+</body>
+</html>

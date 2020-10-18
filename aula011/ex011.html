@@ -1,0 +1,36 @@
+<!-- Ex 009.js em forma de site -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro</title>
+</head>
+<body>
+    <div id="titulo">
+        <h1>Você é estrangeiro?</h1>
+    </div>
+    Qual país você nasceu?<input type="text" name='pais' id="pais">
+    <input type="button" id="nacionalidade" value="Verificar" onclick="verificar()">
+    <div id="msg">
+
+    </div>
+
+    <script>
+            function verificar() { 
+                var nac = document.querySelector('input#pais')
+                var comp = String(pais.value)
+
+                if (comp === 'brasil') {
+                    msg.innerHTML = '<p>Você é brasileiro(a)</p>'
+                }
+                else {
+                    msg.innerHTML = '<p>Você não é brasileiro(a)</p>'
+                }
+            }
+    </script>
+
+    
+</body>
+</html>

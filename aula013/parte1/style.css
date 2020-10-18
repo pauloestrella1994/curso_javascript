@@ -1,0 +1,36 @@
+body {
+    background: #48226b ;
+    font: normal 20pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 18px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px #1b1616;
+    font-style: normal 15px Arial black;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+img {
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+}
+
+div#msg {
+    padding: 10px;
+}
